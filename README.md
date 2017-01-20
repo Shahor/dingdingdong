@@ -14,13 +14,6 @@ Whatever you need it to :)
 ## With npm:
 > `$> npm install -g dingdingdong`
 
-## Generate the config
-
-`$> dingdingdong -g`
-
-This command will create a `.dingdingdongrc` file in your `~/`
-(The command will ask you to when you execute it the first time anyway)
-
 ## Configure your connectors
 
 ```json
