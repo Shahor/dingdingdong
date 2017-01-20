@@ -1,6 +1,6 @@
 {
   "name": "dingdingdong",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Alert yourself when a task ends",
   "repository": "https://github.com/Shahor/dingdingdong",
   "author": "Alexandre Gaudencio",
@@ -10,7 +10,7 @@
     "build": "node_modules/.bin/babel src --out-dir lib",
     "link": "yarn run build && npm link",
     "prepublish": "yarn run build",
-	"install" : "npm run build"
+    "install": "npm run build"
   },
   "bin": {
     "dingdingdong": "lib/index.js"
