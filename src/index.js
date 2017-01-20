@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
-import Commander from 'commander'
-import { hrtime, argv } from 'process'
+import { argv } from 'process'
 import Config from './utils/config'
 import spawn from './utils/spawn'
 
@@ -36,7 +35,7 @@ const mergePayload = (payload) => {
 	)
 }
 
-spawn(process.argv.slice(2))
+spawn(argv.slice(2))
 	.then(mergePayload)
 	.then(touchIt)
 	.catch((error) => {
