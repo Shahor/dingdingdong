@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { argv } from 'process'
+import Process from 'process'
 import Config from './utils/config'
 import spawn from './utils/spawn'
 
@@ -35,9 +35,23 @@ const mergePayload = (payload) => {
 	)
 }
 
-spawn(argv.slice(2))
+const display = (payload) => {
+	if (payload.stdout) {
+		Process.stdout.write(payload.stdout)
+	}
+
+	if (payload.stderr) {
+		Process.stderr.write(payload.stderr)
+	}
+
+	return payload
+}
+
+spawn(Process.argv.slice(2))
 	.then(mergePayload)
+	.then(display)
 	.then(touchIt)
 	.catch((error) => {
 		console.log(error)
+		throw error
 	})
