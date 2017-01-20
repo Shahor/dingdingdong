@@ -1,27 +1,27 @@
 {
-	"name": "dingdingdong",
-	"version": "1.0.0",
-	"description": "Alert yourself when a task ends",
-	"repository": "https://github.com/Shahor/dingdingdong",
-	"author": "Alexandre Gaudencio",
-	"license": "MIT",
-	"scripts": {
-		"start": "yarn run build && node lib/index.js",
-		"build": "node_modules/.bin/babel src --out-dir lib",
-		"link" : "yarn run build && npm link",
-		"prepublish" : "yarn run build"
-	},
-	"bin" : {
-		"dingdingdong" : "lib/index.js"
-	},
-	"devDependencies": {
-		"babel-cli": "^6.22.2",
-		"babel-loader": "^6.2.10",
-		"babel-preset-env": "^1.1.8",
-		"commander": "^2.9.0",
-		"eslint": "^3.13.1",
-		"ramda": "^0.23.0",
-		"request": "^2.79.0",
-		"webpack": "^1.14.0"
-	}
+  "name": "dingdingdong",
+  "version": "1.1.0",
+  "description": "Alert yourself when a task ends",
+  "repository": "https://github.com/Shahor/dingdingdong",
+  "author": "Alexandre Gaudencio",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn run build && node lib/index.js",
+    "build": "node_modules/.bin/babel src --out-dir lib",
+    "link": "yarn run build && npm link",
+    "prepublish": "yarn run build"
+  },
+  "bin": {
+    "dingdingdong": "lib/index.js"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-loader": "^6.2.10",
+    "babel-preset-env": "^1.1.8",
+    "commander": "^2.9.0",
+    "eslint": "^3.13.1",
+    "ramda": "^0.23.0",
+    "request": "^2.79.0",
+    "webpack": "^1.14.0"
+  }
 }
