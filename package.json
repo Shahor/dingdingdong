@@ -1,6 +1,6 @@
 {
   "name": "dingdingdong",
-  "version": "1.8.0",
+  "version": "1.9.0",
   "main": "build/index.js",
   "description": "Alert yourself when a task ends",
   "repository": "https://github.com/Shahor/dingdingdong",
