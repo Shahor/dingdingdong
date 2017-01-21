@@ -1,11 +1,11 @@
 # dingdingdong
-Alert yourself when a task ends
 
-# What for?
-
-Whatever you need it to :)
+For your notification needs.
+`dingdingdong` can automatically send you notifications once your long running program ends, so you can go grab a coffee in peace and be back at your computer just in time.
 
 # Install
+
+You need [nodejs](https://nodejs.org/en/)
 
 ## With yarn:
 
