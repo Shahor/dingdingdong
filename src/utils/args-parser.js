@@ -44,6 +44,12 @@ const setupCommander = () => {
 	Commander
 		.version(Package.version)
 		.option('-d, --debug')
+		.option('-t, --test', 'Send a test notification [using "sleep 1" command]', () => {
+			Commander.emit('onTest', {
+				command : 'sleep',
+				arguments : [1]
+			})
+		})
 		.parse(process.argv)
 }
 
@@ -61,6 +67,7 @@ export function setupHandlers({
 	if (!alreadySetup) {
 		Commander.addListener('onDone', compose(onDone, parseArgs))
 		Commander.addListener('onSend', onSend)
+		Commander.addListener('onTest', onDone)
 
 		setupCommander()
 		alreadySetup = true

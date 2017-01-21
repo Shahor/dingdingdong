@@ -3,6 +3,18 @@
 For your notification needs.
 `dingdingdong` can automatically send you notifications once your long running program ends, so you can go grab a coffee in peace and be back at your computer just in time.
 
+# Examples
+
+```shell
+$> dingdingdong done sleep 1800 # have a good 30mn nap
+$> dingdingdong send "Hello devices?"
+```
+
+More infos with : 
+```shell
+$> dingdingdong -h
+```
+
 # Install
 
 You need [nodejs](https://nodejs.org/en/)

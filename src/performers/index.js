@@ -1,7 +1,8 @@
-import performSpawn from './spawn'
-import performText from './text'
 import Config from '../utils/config'
 import Connectors from '../connectors'
+
+import performSpawn from './spawn'
+import performText from './text'
 
 const touchIt = (payload) => {
 	Object.keys(Config.connectors).forEach((connectorName) => {
