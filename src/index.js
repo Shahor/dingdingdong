@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
-import { exec, text } from './utils/performer'
+import { doSpawn, doText } from './performers'
 import { setupHandlers } from './utils/args-parser'
 
 setupHandlers({
-	onDone : exec,
-	onSend : text
+	onDone : doSpawn,
+	onSend : doText
 })

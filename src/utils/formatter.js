@@ -1,4 +1,4 @@
-export default ({command, stdout, stderr, duration, code }) => {
+export let rich = ({command, stdout, stderr, duration, code }) => {
 	const emotion = code === 0 ? '🙂' : '😥'
 	const title = "Time to finish your coffee o/"
 
