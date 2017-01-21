@@ -1,6 +1,8 @@
 import { hrtime } from 'process'
 import { spawn } from 'child_process'
 import { compose } from 'ramda'
+import Process from 'process'
+import { rich as toRich }from '../utils/formatter'
 
 const toTimeDiff = (start) => hrtime(start)
 const toMs = (duration) => {
@@ -13,8 +15,7 @@ const toDuration = compose(
 )
 
 // TODO : Handle stdin!
-export default (args) => {
-	const command = args.shift()
+let doIt = (command, args) => {
 	const spawned = spawn(command, args)
 
 	let stderr = ''
@@ -50,4 +51,45 @@ export default (args) => {
 			})
 		})
 	})
+}
+
+const base = {
+	command : '',
+	stdout : '',
+	stderr : '',
+	code : '',
+	duration : null
+}
+
+const mergePayload = (payload) => {
+
+	return Object.assign(
+		{}, 
+		base,
+		payload
+	)
+}
+
+const display = (payload) => {
+	if (payload.stdout) {
+		Process.stdout.write(payload.stdout)
+	}
+
+	if (payload.stderr) {
+		Process.stderr.write(payload.stderr)
+	}
+
+	return payload
+}
+
+
+export default (parsed) => {
+	return doIt(parsed.command, parsed.arguments)
+		.then(mergePayload)
+		.then(display)
+		.then(toRich)
+		.catch((error) => {
+			console.log(error)
+			throw error
+		})
 }
