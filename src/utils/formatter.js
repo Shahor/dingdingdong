@@ -1,7 +1,7 @@
-const emotion = code === 0 ? '🙂' : '😥'
-const title = "Time to finish your coffee o/"
-
 export default ({command, stdout, stderr, duration, code }) => {
+	const emotion = code === 0 ? '🙂' : '😥'
+	const title = "Time to finish your coffee o/"
+
 	return `${title}
 
 Command: ${command}
@@ -13,4 +13,8 @@ Exit code: ${code} ${emotion}
 Enjoy your day, champ.
 You rock! 🤘
 `
+}
+
+export let text = (text) => {
+	return text
 }

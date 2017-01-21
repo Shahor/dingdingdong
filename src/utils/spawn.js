@@ -13,8 +13,7 @@ const toDuration = compose(
 )
 
 // TODO : Handle stdin!
-export default (args) => {
-	const command = args.shift()
+export default (command, args) => {
 	const spawned = spawn(command, args)
 
 	let stderr = ''

@@ -1,5 +1,4 @@
 import request from 'request'
-import format from '../utils/formatter'
 
 const ENDPOINT = "https://api.pushbullet.com/v2/pushes"
 const doRequest = ({ access_token }, payload) => {
@@ -14,7 +13,7 @@ const doRequest = ({ access_token }, payload) => {
 			.form({
 				type : 'note',
 				title : '🔔 Ding ding dong!',
-				body : format(payload)
+				body : payload
 			})
 			.on('data', (chunk) => {
 				data += chunk
