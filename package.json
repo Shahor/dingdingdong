@@ -20,6 +20,15 @@
     "ramda": "^0.23.0",
     "request": "^2.79.0"
   },
+  "keywords" : [
+	  "notification",
+	  "automation",
+	  "pushbullet",
+	  "alert",
+	  "mobile",
+	  "pushover",
+	  "simplepush"
+  ],
   "devDependencies": {
     "babel-cli": "^6.22.2",
     "babel-loader": "^6.2.10",
