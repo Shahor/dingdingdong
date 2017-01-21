@@ -1,6 +1,6 @@
 {
   "name": "dingdingdong",
-  "version": "1.10.0",
+  "version": "1.10.1",
   "main": "build/index.js",
   "description": "Alert yourself when a task ends",
   "repository": "https://github.com/Shahor/dingdingdong",
@@ -20,14 +20,14 @@
     "ramda": "^0.23.0",
     "request": "^2.79.0"
   },
-  "keywords" : [
-	  "notification",
-	  "automation",
-	  "pushbullet",
-	  "alert",
-	  "mobile",
-	  "pushover",
-	  "simplepush"
+  "keywords": [
+    "notification",
+    "automation",
+    "pushbullet",
+    "alert",
+    "mobile",
+    "pushover",
+    "simplepush"
   ],
   "devDependencies": {
     "babel-cli": "^6.22.2",
