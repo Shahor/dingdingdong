@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "commander": "^2.9.0",
+    "osx-notifier": "^0.2.2",
     "ramda": "^0.23.0",
     "request": "^2.79.0"
   },

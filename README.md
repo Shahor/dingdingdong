@@ -36,14 +36,19 @@ Follow the form here. If you don't need a given connector, don't mention it in t
 {
 	"connectors" : {
 		"pushbullet" : {
-			// You can get this at https://www.pushbullet.com/#settings
+			"use" : true,
 			"access_token" : "_YOUR_KEY_HERE_"
 		},
 		"simplepush" : {
+			"use" : false,
 			"key" : "_YOU_KE_"
+		},
+		"osx" : {
+			"use" : true
 		}
 	}
 }
+
 ```
 
 # Usage
@@ -56,3 +61,4 @@ It will automatically notify you using the connectors your configured with extra
 
 - Pushbullet (for mobile notification)
 - Simplepush
+- osx notification center

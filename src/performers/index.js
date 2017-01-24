@@ -8,6 +8,10 @@ const touchIt = (payload) => {
 	Object.keys(Config.connectors).forEach((connectorName) => {
 		const config = Config.connectors[connectorName]
 
+		if (!config.use) {
+			return
+		}
+
 		connectorName = connectorName
 			.replace(/^\w/, (n) => n.toUpperCase())
 
