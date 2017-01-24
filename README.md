@@ -55,3 +55,4 @@ It will automatically notify you using the connectors your configured with extra
 # Supported connectors
 
 - Pushbullet (for mobile notification)
+- Simplepush
