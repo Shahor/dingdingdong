@@ -3,6 +3,8 @@
 For your notification needs.
 `dingdingdong` can automatically send you notifications once your long running program ends, so you can go grab a coffee in peace and be back at your computer just in time.
 
+Notifications will be sent using the connectors you provide in your config file (`~/.dingdingdongrc`)
+
 # Examples
 
 ```shell
@@ -28,6 +30,8 @@ You need [nodejs](https://nodejs.org/en/)
 
 ## Configure your connectors
 
+Follow the form here. If you don't need a given connector, don't mention it in the config.
+
 ```json
 {
 	"connectors" : {
@@ -35,7 +39,9 @@ You need [nodejs](https://nodejs.org/en/)
 			// You can get this at https://www.pushbullet.com/#settings
 			"access_token" : "_YOUR_KEY_HERE_"
 		},
-		...
+		"simplepush" : {
+			"key" : "_YOU_KE_"
+		}
 	}
 }
 ```
@@ -49,3 +55,4 @@ It will automatically notify you using the connectors your configured with extra
 # Supported connectors
 
 - Pushbullet (for mobile notification)
+- Simplepush
