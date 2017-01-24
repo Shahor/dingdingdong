@@ -41,7 +41,7 @@ Follow the form here. If you don't need a given connector, don't mention it in t
 		},
 		"simplepush" : {
 			"use" : false,
-			"key" : "_YOU_KE_"
+			"key" : "_YOUR_KEY_"
 		},
 		"osx" : {
 			"use" : true
