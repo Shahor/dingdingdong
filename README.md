@@ -1,5 +1,7 @@
 # dingdingdong
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Shahor/dingdingdong.svg)](https://greenkeeper.io/)
+
 For your notification needs.
 `dingdingdong` can automatically send you notifications once your long running program ends, so you can go grab a coffee in peace and be back at your computer just in time.
 
