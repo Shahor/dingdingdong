@@ -18,7 +18,7 @@
   "dependencies": {
     "commander": "^2.9.0",
     "osx-notifier": "^0.2.2",
-    "ramda": "^0.23.0",
+    "ramda": "^0.25.0",
     "request": "^2.79.0"
   },
   "keywords": [
@@ -32,8 +32,8 @@
   ],
   "devDependencies": {
     "babel-cli": "^6.22.2",
-    "babel-loader": "^6.2.10",
+    "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.1.8",
-    "eslint": "^3.13.1"
+    "eslint": "^4.15.0"
   }
 }
